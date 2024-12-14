@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Triangle Area Calculator</h1>
+    <div class="container">
+        <!-- Select method dropdown with ARIA label -->
+        <label id="methodLabel" for="method">Select calculation method:</label>
+        <select id="method" onchange="showForm()" aria-labelledby="methodLabel">
+            <option value="1">Two sides and the included angle</option>
+            <option value="2">Three sides (Heron's formula)</option>
+            <option value="3">Two angles and the included side</option>
+        </select>
+
+        <!-- Form 1: Two sides and included angle -->
+        <div id="form1" class="form" style="display:none;">
+            <label id="sideALabel" for="sideA">Enter side a:</label>
+            <input type="number" id="sideA" placeholder="Side a" aria-labelledby="sideALabel" />
+
+            <label id="angleLabel" for="angle">Enter the included angle C (°):</label>
+            <input type="number" id="angle" placeholder="Angle C (°)" aria-labelledby="angleLabel" />
+
+            <label id="sideBLabel" for="sideB">Enter side b:</label>
+            <input type="number" id="sideB" placeholder="Side b" aria-labelledby="sideBLabel" />
+        </div>
+
+        <!-- Form 2: Three sides (Heron's formula) -->
+        <div id="form2" class="form" style="display:none;">
+            <label id="sideA3Label" for="sideA3">Enter side a:</label>
+            <input type="number" id="sideA3" placeholder="Side a" aria-labelledby="sideA3Label" />
+
+            <label id="sideB3Label" for="sideB3">Enter side b:</label>
+            <input type="number" id="sideB3" placeholder="Side b" aria-labelledby="sideB3Label" />
+
+            <label id="sideCLabel" for="sideC">Enter side c:</label>
+            <input type="number" id="sideC" placeholder="Side c" aria-labelledby="sideCLabel" />
+        </div>
+
+        <!-- Form 3: Two angles and included side -->
+        <div id="form3" class="form" style="display:none;">
+            <label id="angleA2Label" for="angleA2">Enter angle A (°):</label>
+            <input type="number" id="angleA2" placeholder="Angle A (°)" aria-labelledby="angleA2Label" />
+
+            <label id="sideB2Label" for="sideB2">Enter the included side b:</label>
+            <input type="number" id="sideB2" placeholder="Side b" aria-labelledby="sideB2Label" />
+
+            <label id="angleC2Label" for="angleC2">Enter angle C (°):</label>
+            <input type="number" id="angleC2" placeholder="Angle C (°)" aria-labelledby="angleC2Label" />
+        </div>
+
+        <button onclick="calculateArea()">Calculate Area</button>
+
+        <div class="result" id="result"></div>
+
+        <!-- Circular button with ARIA label to toggle theme -->
+        <button id="circleButton" onclick="changeTheme()" aria-label="Toggle theme">
+            <span id="icon" class="sun">&#9728;</span> <!-- Sun icon initially -->
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
