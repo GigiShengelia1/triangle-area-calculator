@@ -1,5 +1,5 @@
 # Triangle Area Calculator
-#### Video Demo: <URL HERE>
+#### Video Demo: https://gigishengelia1.github.io/triangle-area-calculator/
 #### Description:
 
 The **Triangle Area Calculator** is a web-based tool designed to help users calculate the area of a triangle using three different methods. The tool is user-friendly and provides three input options for calculating the area, making it versatile for various triangle properties.
