@@ -29,7 +29,7 @@ This project serves as both an educational tool and a practical utility for anyo
 Feel free to use the **Triangle Area Calculator** to quickly and accurately calculate triangle areas based on your given parameters. Whether you're studying geometry, working on engineering problems, or just in need of a quick calculation, this tool can help simplify your process.
 
 ### Installation:
-To use the Triangle Area Calculator, simply clone this repository or download the files to your local machine. Open the `index.html` file in your preferred browser, and the calculator will be ready to use.
+To use the Triangle Area Calculator, simply clone this repository or download the files to your local machine or go to link https://gigishengelia1.github.io/triangle-area-calculator/
 
 ### Future Improvements:
 - Add support for additional triangle area calculation methods.
